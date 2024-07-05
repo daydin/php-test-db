@@ -1,12 +1,15 @@
 <?php
+require_once 'config.php'
 ?>
 <html lang="en">
+
 <head>
-
     <title>Search Page</title></head>
-
 <body>
 
+<?php
+echo $_SESSION["username"];
+?>
 <form class="searchform" action="search.php" method="post">
     <label for="search">Search for user:</label>
     <input id="search" type="text" name="usersearch" placeholder="Search...">

@@ -48,9 +48,11 @@ if (empty($results)) {
 
 }else{
     foreach($results as $row){
-        echo htmlspecialchars($row["username"]);
-        echo htmlspecialchars($row["comment_text"]);
-        echo htmlspecialchars($row["created_at"]);
+        echo "<div>";
+        echo "<h4>" . htmlspecialchars($row["username"]) . "</h4>";
+        echo "<p>" .htmlspecialchars($row["comment_text"]). "</p>";
+        echo "<p>" .htmlspecialchars($row["created_at"]). "</p>";
+        echo "</div>";
     }
 }
 ?>
