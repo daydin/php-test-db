@@ -57,5 +57,21 @@ echo $_SESSION["username"];
     </label>
     <button>Delete</button>
 </form>
+
+<h3>Add a comment</h3>
+
+<form action="includes/addcomment.inc.php" method="post">
+    <label>
+        <input type="text" name="username" placeholder="Username">
+    </label>
+    <label>
+        <input type="text" name="comment_text" placeholder="Add your comment">
+    </label>
+    <label>
+        <input type="number" name="users_id" placeholder="Foreign key, has to match table data">
+    </label>
+    <button>Add comment</button>
+</form>
+
 </body>
 </html>
