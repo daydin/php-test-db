@@ -1,9 +1,9 @@
 <?php
 ?>
-<html>
+<html lang="en">
 <head>
 
-</head>
+    <title>Search Page</title></head>
 
 <body>
 
@@ -16,26 +16,42 @@
 
 <h3>Create account</h3>
 <form action="includes/formhandler.inc.php" method="post">
-    <input type="text" name="username" placeholder="Username">
-    <input type="password" name="pwd" placeholder="Password">
-    <input type="text" name="email" placeholder="E-mail">
+    <label>
+        <input type="text" name="username" placeholder="Username">
+    </label>
+    <label>
+        <input type="password" name="pwd" placeholder="Password">
+    </label>
+    <label>
+        <input type="text" name="email" placeholder="E-mail">
+    </label>
     <button>Sign up</button>
 </form>
 
 <h3>Change account</h3>
 
 <form action="includes/userupdate.inc.php" method="post">
-    <input type="text" name="username" placeholder="Username">
-    <input type="password" name="pwd" placeholder="Password">
-    <input type="text" name="email" placeholder="E-mail">
+    <label>
+        <input type="text" name="username" placeholder="Username">
+    </label>
+    <label>
+        <input type="password" name="pwd" placeholder="Password">
+    </label>
+    <label>
+        <input type="text" name="email" placeholder="E-mail">
+    </label>
     <button>Update</button>
 </form>
 
 <h3>Delete account</h3>
 
 <form action="includes/userdelete.inc.php" method="post">
-    <input type="text" name="username" placeholder="Username">
-    <input type="password" name="pwd" placeholder="Password">
+    <label>
+        <input type="text" name="username" placeholder="Username">
+    </label>
+    <label>
+        <input type="password" name="pwd" placeholder="Password">
+    </label>
     <button>Delete</button>
 </form>
 </body>
