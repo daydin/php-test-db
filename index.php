@@ -67,9 +67,9 @@ echo $_SESSION["username"];
     <label>
         <input type="text" name="comment_text" placeholder="Add your comment">
     </label>
-    <label>
-        <input type="number" name="users_id" placeholder="Foreign key, has to match table data">
-    </label>
+    <!--    <label>-->
+    <!--        <input type="number" name="users_id" placeholder="Foreign key, has to match table data">-->
+    <!--    </label>-->
     <button>Add comment</button>
 </form>
 
